@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <title>Rollbar | Error Logging & Tracking Service for Software Teams</title>
+    <link
+      rel="icon"
+      href="https://cdn.rollbar.com/wp-content/themes/rollbar/assets/img/favicon/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- HEADER PART -->
+    <div class="header">
+      <input type="checkbox" id="check" />
+      <label for="check" class="hambtn">&#9776;</label>
+      <label for="check" class="crossbtn" >&#10006;</label>
+      <!-- NAVBAR -->
+
+      <div class="nav_container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="#"
+              ><img
+                src="https://cdn.rollbar.com/wp-content/themes/rollbar/assets/img/logo-white-rollbar.svg"
+                alt="brand_image"
+            /></a>
+          </div>
+          <div class="tabs">
+            <ul class="tab_links">
+              <li>
+                <a href="#">Product</a>
+                <div class="product_menu">
+                 <div class="col_1">
+                  <ul>
+                    <li >
+                      <a href="#" id="features"><span
+                        ><img
+                          src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-features.png.webp"
+                          alt="icon_1" /></span
+                      >FEATURES</a>
+                      <ul class="features_list">
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Prioritize</a></li>
+                        <li><a href="#">Resolve</a></li>
+                        <li><a href="#">Automate</a></li>
+                        <li><a href="#">Improve</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                 </div>
+                 <div class="col_2">
+                  <ul>
+                    <li><a href="#" id="lang"><span
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-platforms.png.webp"
+                        alt="icon_2" /></span
+                    >LANGUAGES/FRAMEWORKS</a></li>
+                    <li><a href="#" id="integrate"><span
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-integrations.png.webp"
+                        alt="icon_3" /></span
+                    >INTEGRATIONS</a></li>
+                  <li><a href="#" id="security"><span
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-securit.png.webp"
+                        alt="icon_4" /></span
+                    >SECURITY</a>
+                    <ul class="security_list">
+                      <li><a href="#">Compliance</a></li>
+                    </ul>
+                  </li>
+                    <li><a href="#" id="prod_updates"><span
+                      ><img
+                        src="	https://cdn.rollbar.com/wp-content/uploads/2021/04/dev-loop.png.webp"
+                        alt="icon_5" /></span
+                    >PRODUCT UPDATES</a></li>
+                  </ul>
+                 </div>
+                </div>
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li>
+                <a href="#">Docs</a>
+                <div class="docs_menu">
+            <div class="col_1">
+              <ul>
+                <li>
+                  <a href="#" id="developer"><span
+                    ><img
+                      src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-developer@2x.png.webp"
+                      alt="icon_1" /></span
+                  >DEVELOPER</a>
+                  <ul class="developer_list">
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                    <li><a href="#">System Status</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col_2">
+              <ul>
+                <li>
+                  <a href="#" id="resources"><span
+                    ><img
+                      src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-library@2x.png.webp"
+                      alt="icon_2" /></span
+                  >RESOURCES</a>
+                  <ul class="resource_list">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Rollbar Academy</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col_3">
+              <ul>
+                <li>
+                  <a href="#" id="events"><span
+                    ><img
+                      src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-developer@2x.png.webp"
+                      alt="icon_3" /></span
+                  >EVENTS</a>
+                  <ul class="event_list">
+                    <li><a href="#">Live Demo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Solutions</a>
+                <div class="solutions_menu">
+                  <div class="col_1">
+                    <ul>
+                      <li>
+                        <a href="#" id="teams"><span
+                          ><img
+                            src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-teams@2x.png.webp"
+                            alt="icon_1" /></span
+                        >TEAMS</a>
+                        <ul class="teams_list">
+                          <li><a href="#">Software Development</a></li>
+                          <li><a href="#">Engineering Management</a></li>
+                          <li><a href="#">QA/Testing</a></li>
+                          <li><a href="#">Platforms/Ops</a></li>
+                          <li><a href="#">Customer Support</a></li>
+                          <li><a href="#">Software Agency</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col_2">
+                    <ul>
+                      <li>
+                        <a href="#" id="use_case"><span
+                        ><img
+                          src="	https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-usecases@2x.png.webp"
+                          alt="icon_2" /></span
+                      >USE CASES</a>
+                        <ul class="use_list">
+                          <li><a href="#">Low-Risk Release</a></li>
+                          <li><a href="#">Production Code Quality</a></li>
+                          <li><a href="#">DevOps Bridge</a></li>
+                          <li><a href="#">Customer Support</a></li>
+                          <li><a href="#">Effective Testing & QA</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Enterprise</a></li>
+            </ul>
+            <ul class="button_links">
+              <li><a href="#" id="login">Log in</a></li>
+              <li><a href="#" id="tryfree">Try free</a></li>
+            </ul>
+            <ul class="button_links_dummy">
+              <li><a href="#" id="login">Log in</a></li>
+              <li><a href="#" id="tryfree">Try free</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- HEADER CONTENT -->
+      <div class="head_content">
+        <div class="head_title">
+          <h1 class="title">
+            Discover, predict, and resolve errors
+            <span>in real-time</span>
+          </h1>
+        </div>
+        <div class="button_box">
+          <a href="" id="try_for_free">Try for free</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN PART -->
+    <div class="main">
+      <div class="main_container">
+        <!-- TITLE -->
+        <div class="main_title">
+          <h1 class="title">Find and Fix Errors in Your Code Faster</h1>
+        </div>
+        <!-- SECTIONS -->
+        <section class="first section">
+          <div class="left">
+            <div>
+              <h3>Discover in real-time</h3>
+            </div>
+            <div>
+              <p>
+                Go beyond crash reporting, error tracking, logging and error
+                monitoring. Get instant and accurate alerts — plus a real-time
+                feed — of all errors, including unhandled exceptions. Our
+                automation-grade grouping uses machine learning to reduce noise
+                and gives you error signals you can trust.
+              </p>
+              <a href="#" class=""
+                >A better way to discover errors<span class="arrow"
+                  >&#129030</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="right">
+            <div>
+              <img
+                src="https://cdn.rollbar.com/wp-content/uploads/2021/06/error-logging-alerts.png"
+                alt="card1"
+                width="597px"
+                height="386px"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="second section">
+          <div class="left">
+            <div>
+              <img
+                src="https://cdn.rollbar.com/wp-content/uploads/2021/05/track-prioritize-errors.png"
+                alt="card2"
+                width="561px"
+                height="388px"
+              />
+            </div>
+          </div>
+          <div class="right">
+            <div>
+              <h3>Prioritize effectively</h3>
+            </div>
+            <div>
+              <p>
+                Instantly see the impact of crashes and errors with metadata —
+                like which customers are impacted and the affected browsers and
+                IPs — to know which ones you need to respond to first.
+                Automatically assign to the right person or team.
+              </p>
+              <a href="#" class=""
+                >Prioritize and fix errors fast<span></span
+              ></a>
+            </div>
+          </div>
+        </section>
+        <section class="third section">
+          <div class="left">
+            <div>
+              <h3>Resolve right away</h3>
+            </div>
+            <div>
+              <p>
+                Eliminate bugs in record time by identifying the root cause
+                through stack traces, local variables, telemetry, suspect
+                deploys, and other metadata. See all the information you need in
+                one, simple view.
+              </p>
+              <a href="#" class=""
+                >Fix errors the right way, right away<span></span
+              ></a>
+            </div>
+          </div>
+          <div class="right">
+            <div>
+              <img
+                src="https://cdn.rollbar.com/wp-content/uploads/2021/05/log-resolve-errors.png"
+                alt="card3"
+                width="608px"
+                height="390px"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="fourth section">
+          <div class="left">
+            <div>
+              <img
+                src="https://cdn.rollbar.com/wp-content/uploads/2021/06/automate-error-response.png"
+                alt="card4"
+                width="561px"
+                height="374px"
+              />
+            </div>
+          </div>
+          <div class="right">
+            <div>
+              <h3>Automate error response</h3>
+            </div>
+            <div>
+              <p>
+                Take immediate action on new and reactivated errors before they
+                impact users with our AI-assisted workflows. And create custom
+                API or webhook-based workflows using our powerful rule engine.
+              </p>
+              <a href="#" class=""
+                >Automate error response and resolution<span></span
+              ></a>
+            </div>
+          </div>
+        </section>
+        <section class="fifth section">
+          <div class="left">
+            <div>
+              <h3>Improve code quality</h3>
+            </div>
+            <div>
+              <p>
+                Designed to provide information through easily digestible
+                metrics and historical trends to allow teams to understand their
+                code and take action to improve their practices.
+              </p>
+              <a href="#" class=""
+                >Reduce errors and improve code quality<span></span
+              ></a>
+            </div>
+          </div>
+          <div class="right">
+            <div>
+              <img
+                src="https://cdn.rollbar.com/wp-content/uploads/2022/10/Improve-Dashboard-1.png"
+                alt="card5"
+                width="471px"
+                height="311px"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- FOOTER PART -->
+    <div class="footer">
+      <div class="start line"></div>
+      <div class="footer_top">
+        <div class="item" id="item_1">
+          <a href="#"
+            ><img
+              src="https://cdn.rollbar.com/wp-content/themes/rollbar/assets/img/logo-white-rollbar.svg"
+              alt="footer_brand_image"
+          /></a>
+        </div>
+        <div class="item" id="item_2">
+          <div class="item_name">
+            <span>PRODUCT</span>
+          </div>
+          <div class="item_list">
+            <ul>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Platforms</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Changelog</a></li>
+              <li><a href="#">Roadmap</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="item" id="item_3">
+          <div class="item_name">
+            <span>LANGUAGES/FRAMEWORKS</span>
+          </div>
+          <div class="item_list">
+            <ul>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Ruby</a></li>
+              <li><a href="#">iOS</a></li>
+              <li><a href="#">.NET</a></li>
+              <li><a href="#">React</a></li>
+              <li><a href="#">Node</a></li>
+              <li><a href="#">Django</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">Laravel</a></li>
+              <li><a href="#">Rails</a></li>
+              <li><a href="#">More…</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="item" id="item_4">
+          <div class="item_name">
+            <span>DOCUMENTATION</span>
+          </div>
+          <div class="item_list">
+            <ul>
+              <li><a href="#">Docs Overview</a></li>
+              <li><a href="#">Setting up Rollbar</a></li>
+              <li><a href="#">Notifications</a></li>
+              <li><a href="#">Deploy Tracking</a></li>
+              <li><a href="#">Telemetry</a></li>
+              <li><a href="#">Security & Compliance</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="item" id="item_5">
+          <div class="item_name">
+            <span>COMPANY</span>
+          </div>
+          <div class="item_list">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li>
+                <ul class="icons_list">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/themes/rollbar/assets/img/icon-github.svg"
+                        alt="Icon_1"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/themes/rollbar/assets/img/icon-twitter.svg"
+                        alt="Icon_2"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/themes/rollbar/assets/img/icon-linkedin.svg"
+                        alt="Icon_3"
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="end line"></div>
+      <div class="footer_bottom">
+        <p>© 2012-24 Rollbar Inc.</p>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
